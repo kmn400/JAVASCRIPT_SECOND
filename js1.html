@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id='text'>아무런 값이 없습니다.</p>
+<button id='btn'>값을 넣어라!</button>
+
+<script>
+    const ba=document.getElementById('btn');
+    const text=document.getElementById('text');
+    var number = 0;
+    ba.addEventListener('click', function(){
+
+        number ++;
+        text.innerHTML = number; //innerHTML 함수가 아니라 변수처럼 만듦. 
+                                 // 그렇기에 '='을 사용함.
+
+    });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            javascript
+        </title>
+    </head>
+<body>
+    <button id='btn'>이미지 변환</button>
+    <img id ='kbs' src='abc.jpg'>
+    <script>
+
+        var old_image = document.getElementById('kbs').src;
+
+        document.getElementById('btn').addEventListener('click', function(){
+            
+        console.log(document.getElementById('kbs').src);//이거 어케함??
+        document.getElementById('kbs').src = 'def.png';
+        });
+    </script>
+</body>
+</html>

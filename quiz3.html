@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p id="demo"></p>
+    <button id='btn'>값을 넣어라!</button>
+<script>
+    var ba = document.getElementById('btn');
+    ba.addEventListener('click', function(){
+        num();
+        });
+function num()
+{
+    let a = prompt('숫자를 입력해수제요.');
+    let anum = parseInt(a);
+    if (isNaN(a) == false) {
+        let b = '0';
+        for(i = 1; i <= anum; i++){
+        b = b + i;
+        if (parseInt(b) % 3 == 1){
+           b = b.fontcolor("red")
+        }
+        else {
+            b
+        }
+    };
+        document.getElementById("demo").innerHTML = b;
+    } else {
+        num();
+    }
+}
+</script>
+</body>
+</html>

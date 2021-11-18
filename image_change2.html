@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            javascript
+        </title>
+    </head>
+<body>
+    <button id='btn'>이미지 변환</button>
+    <button id='btn2'>스타일 변환</button>
+    <img id ='kbs' src='abc.jpg' style="height: 80px">
+    <script>
+
+        var old_image = document.getElementById('kbs').src;
+
+        document.getElementById('btn').addEventListener('click', function(){
+
+            if(document.getElementById('kbs').src == old_image)
+            {
+                document.getElementById('kbs').src = 'def.png';
+            }
+            else
+            {
+                document.getElementById('kbs').src = 'abc.jpg';
+            }
+        });
+            document.getElementById('btn2').addEventListener('click', function(){
+            document.getElementById('kbs').style.height = "50px";
+        });
+    </script>
+</body>
+</html>

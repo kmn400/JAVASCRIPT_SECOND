@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p id="demo"></p>
+<script>
+//1. 숫자 2개를 받음
+//2. 숫자가 아니면 처음으로
+//3. 둘다 숫자가 맞으면 화면에 둘의합을 표시하시오(innerHTML)
+num();
+
+function num()
+{
+    var a = prompt('숫자를 입력해수제요.');
+    var b = prompt('숫자를 입력해수제요.');
+    var anum = parseInt(a);
+    var bnum = parseInt(b);
+    console.log(typeof(anum));
+    console.log(typeof(bnum));
+    var c = anum + bnum;
+    
+    if (isNaN(anum) == false && isNaN(bnum) == false) {
+        document.getElementById("demo").innerHTML = c;
+    } else {
+        num();
+    }
+}
+</script>
+</body>
+</html>
